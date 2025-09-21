@@ -223,12 +223,9 @@ p {
     margin-top: 48px;
 }
 .cart-3-6 {
-    width: 80%;
+    width: 100%;
     height: 366px;
-    justify-content: space-between;
-    opacity: 1px;
-    padding-right: 144px;
-    padding-left: 144px; 
+    justify-content: space-around;
     display: flex;
     align-items: center;
     margin-top: 48px;
@@ -296,6 +293,10 @@ p {
     color: white;
     cursor: pointer;
     margin-bottom: 30px;
+}
+.Get-a-Demo:hover {
+    background-color: white;
+    color: rgb(45, 193, 0);
 }
 .blok-end-bottom {
     display: flex;
