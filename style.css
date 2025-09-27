@@ -1,7 +1,12 @@
+/* --- Основні стилі сторінки --- */
+
 body {
     overflow-x: hidden;
     font-family: "Inter", sans-serif;
 }
+
+/* Контейнер пошуку */
+
 .poisk {
     width: 100%;
     height: 84px;
@@ -10,6 +15,9 @@ body {
     align-items: center;
     justify-content: space-around;
 }
+
+/* Кнопковий блок */
+
 .button-6 {
     width: 40%;
     height: 84px;
@@ -17,10 +25,16 @@ body {
     align-items: center;
     justify-content: space-between;
 }
+
+/* Загальний стиль для посилань */
+
 a {
     color: black;
     text-decoration: none;
 }
+
+/* Стиль кнопки для входу */
+
 .Login {
     width: fit-content;
     height: 40px;
@@ -30,6 +44,9 @@ a {
     color: white;
     cursor: pointer;
 }
+
+/* Стиль кнопки для реєстрації */
+
 .Sing-up {
     width: fit-content;
     height: 40px;
@@ -40,13 +57,22 @@ a {
     cursor: pointer;
     flex-wrap: nowrap;
 }
+
+/* Ховер ефект для кнопок .Login і .Sing-up */
+
 .Login:hover, .Sing-up:hover {
     background-color: white;
     color: rgb(45, 193, 0);
 }
+
+/* Ховер ефект для посилань */
+
 a:hover {
     color: #999;
 }
+
+/* Блок №1 (головний блок на сторінці) */
+
 .blok-1 {
     width: 100%;
     height: 589px;
@@ -54,12 +80,21 @@ a:hover {
     align-items: center;
     justify-content: space-around;
 }
+
+/* Текстовий заголовок у блоку */
+
 .text-1 {
     font-size: 56px;
 }
+
+/* Стиль для параграфів */
+
 p {
     color: #999;
 }
+
+/* Кнопка реєстрації */
+
 .Register {
     width: fit-content;
     height: 40px;
@@ -70,10 +105,16 @@ p {
     cursor: pointer;
     margin-top: 10px;
 }
+
+/* Hover ефект для .Register */
+
 .Register:hover {
     background-color: white;
     color: rgb(45, 193, 0);
 }
+
+/* --- Блок №2 --- */
+
 .blok-2 {
     width: 100%;
     height: 670px;
@@ -109,6 +150,9 @@ p {
     justify-content: space-between;
     flex-direction: column;
 }
+
+/* Картковий блок */
+
 .cart-3 {
     width: 100%;
     height: 280px;
@@ -116,6 +160,9 @@ p {
     align-items: center;
     justify-content: space-around;
 }
+
+/* окрема картка */
+
 .cart-1 {
     width: 25%;
     height: 250px;
@@ -124,10 +171,16 @@ p {
     justify-content: space-around;
     flex-direction: column;
 }
+
+/* --- Блок №3 --- */
+
 .blok-3 {
     width: 100%;
     height: 2242.4px;
 }
+
+/* Підблоки блоку 3 */
+
 .blok-3-1{
     width: 100%;
     height: 433px;
@@ -189,6 +242,9 @@ p {
     align-items: center;
     margin-top: 48px;
 }
+
+/* --- Статичні блоки з посиланнями --- */
+
 .text-statf-slka {
     width: 748px;
     height: 324px;
@@ -221,6 +277,9 @@ p {
     background-color: rgb(45, 193, 0);
     color: white;
 }
+
+/* --- Додаткові стилі блоків --- */
+
 .blok-3-5 {
     margin-top: 48px;
 }
@@ -289,6 +348,9 @@ p {
     background-color: rgb(45, 193, 0);
     cursor: pointer;
 }
+
+/* --- Кінцевий блок --- */
+
 .blok-end {
     display: flex;
     flex-direction: column;
@@ -417,14 +479,22 @@ input::placeholder {
 /* мобільна версія */
 
 @media (max-width: 768px) {
+
+    /* Загальні налаштування для body і html на мобільних */
+
     html,body {
         overflow-x: hidden;
         font-family: "Inter", sans-serif;
         font-size: 14px;
     }
+
+    /* Зменшуємо розмір посилань */
+
     a {
         font-size: 14px;
     }
+
+    /* Контейнер пошуку - робимо його адаптивним: змінюємо напрямок і відступи */
 
     .poisk {
         flex-direction: row;
@@ -436,6 +506,8 @@ input::placeholder {
         padding: 10px;
     }
 
+    /* Кнопки в блоці 6 робимо адаптивними: ширина 100%, обтікання */
+
     .button-6 {
         width: 100%;
         flex-direction: row;
@@ -446,12 +518,16 @@ input::placeholder {
         height: auto;
     }
 
+    /* Кнопки Login, Sign-up, Register, Learn-More, Get-a-Demo під мобільний розмір */
+
     .Login, .Sing-up, .Register, .Learn-More, .Get-a-Demo {
         width: 45%;
         min-width: 120px;
         height: 36px;
         font-size: 14px;
     }
+
+    /* Блок 1 - текст і елементи центровані, розмір шрифту зменшений */
 
     .blok-1 {
         flex-direction: row;
@@ -472,6 +548,8 @@ input::placeholder {
         font-size: 14px;
         text-align: center;
     }
+
+    /* Блок 2 - адаптивне розміщення елементів */
 
     .blok-2 {
         height: auto;
@@ -502,6 +580,8 @@ input::placeholder {
         height: auto;
     }
 
+    /* Блок 2 bottom і картки - адаптивне розміщення з обтіканням */
+
     .blok-2-bottom,
     .cart-3 {
         flex-direction: row;
@@ -519,6 +599,8 @@ input::placeholder {
         height: auto;
         padding: 10px;
     }
+
+    /* Блок 3 - адаптивні контейнери з обтіканням */
 
     .blok-3 {
         height: auto;
@@ -538,6 +620,8 @@ input::placeholder {
         padding: 10px;
     }
 
+    /* Контейнери у блоці 3 також адаптивні */
+
     .conteiner {
         flex-direction: row;
         flex-wrap: wrap;
@@ -556,10 +640,15 @@ input::placeholder {
         text-align: center;
     }
 
+    /* Текстовий блок зі статистикою займає всю ширину */
+
     .text-statf-slka {
         width: 100%;
         padding: 0 10px;
     }
+
+    /* Картки */
+
     .carta {
         width: 90%;
         max-width: 350px;
@@ -569,6 +658,8 @@ input::placeholder {
         justify-content: end;
     }
 
+    /* Зображення в картках тепер відносні і адаптивні */
+
     .img-carta {
         width: 100%;
         height: auto;
@@ -577,6 +668,8 @@ input::placeholder {
         position: relative;
         margin: 0;
     }
+
+    /* Опис під картками */
 
     .carta-opes {
         width: 100%;
@@ -589,6 +682,8 @@ input::placeholder {
         margin-top: 10px;
     }
 
+    /* Кнопка "Readmore" на мобільних ширина 100% і менший шрифт */
+
     .text-cart {
         font-size: 16px;
         text-align: center;
@@ -599,6 +694,8 @@ input::placeholder {
         width: 100%;
         font-size: 14px;
     }
+
+    /* Кінцевий блок сторінки */
 
     .blok-end {
         width: 100%;
@@ -620,12 +717,16 @@ input::placeholder {
         text-align: center;
     }
 
+    /* Інформація про компанію - адаптивна */
+
     .company-Info {
         width: 100%;
         max-width: 300px;
         height: auto;
         gap: 20px;
     }
+
+    /* Посилання у футері */
 
     .links {
         flex-direction: row;
@@ -635,15 +736,21 @@ input::placeholder {
         width: 100%;
     }
 
+    /* Колонки у футері */
+
     .col-1, .col-2, .col {
         width: 45%;
         min-width: 140px;
         height: auto;
     }
 
+    /* Розмір заголовків у футері зменшено */
+
     .Company, .Support, .Stay-up-to-date {
         font-size: 18px;
     }
+
+    /* Поле для вводу email та кнопка */
 
     .Email-Input-Field {
         width: 100%;
@@ -672,6 +779,9 @@ input::placeholder {
         border: none;
         cursor: pointer;
     }
+
+    /* Зображення адаптивні */
+
     img {
         max-width: 100%;
         height: auto;
